@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+const firebase = require('firebase/app');
+require('firebase/database');
 
 class App extends React.Component {
   constructor() {
@@ -9,21 +11,21 @@ class App extends React.Component {
     };
   }
 
-  // componentDidMount() {
-  //   const rootRef = firebase.database().ref();
-  //   const speedRef = rootRef.child("speed");
-  //   speedRef.on("value", (snap) => {
-  //     this.setState({
-  //       speed: snap.val(),
-  //     });
-  //   });
-  // }
+  componentDidMount() {
+    const rootRef = firebase.database().ref();
+    const speedRef = rootRef.child("speed");
+    speedRef.on("value", (snap) => {
+      this.setState({
+        speed: snap.val(),
+      });
+    });
+  }
 
   render() {
     return (
       <div className="App">
-        {/* <h1>{this.state.speed}</h1> */}
-        <h1>Work in Progress</h1>
+        <h1>{this.state.speed}</h1>
+        {/* <h1>Work in Progress</h1> */}
       </div>
     );
   }

@@ -24,8 +24,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>{this.state.speed}</h1>
-        {/* <h1>Work in Progress</h1> */}
+        <header className="App-header">
+          <p>
+            This is BearBudget
+          </p>
+        </header>
       </div>
     );
   }

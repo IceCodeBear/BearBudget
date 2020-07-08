@@ -1,5 +1,12 @@
-#!/bin/bash
-
 steps:
-- name: gcr.io/$PROJECT_ID/firebase
-  args: ['deploy', '--project=$PROJECT_ID', '--only=hosting']
+
+      # Install
+      - name: 'gcr.io/cloud-builders/npm'
+        args: ['install']
+
+      # Test
+      - name: 'gcr.io/cloud-builders/npm'
+        args: ['run', 'build']
+
+      - name: gcr.io/$PROJECT_ID/firebase
+        args: ['deploy', '--project=$PROJECT_ID', '--only=hosting']

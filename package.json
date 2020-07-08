@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "pretty": "prettier --write ./src"
+    "pretty": "prettier --write ./src",
+    "deploy": "firebase deploy --debig --token \"$FIREBASE_TOKEN\" --only hosting"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "firebase-tools": "^8.4.3"
   }
 }

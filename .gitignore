@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /.firebase
+/cloud-builders-community
 # testing
 /coverage
 

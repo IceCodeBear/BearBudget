@@ -19,8 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "pretty": "prettier --write ./src",
-    "deploy": "firebase deploy --debig --token \"$FIREBASE_TOKEN\" --only hosting"
+    "pretty": "prettier --write ./src"
   },
   "eslintConfig": {
     "extends": "react-app"

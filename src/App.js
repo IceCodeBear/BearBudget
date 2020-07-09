@@ -26,7 +26,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <p>
-            This is BearBudget
+            Welcome to BearBudget
           </p>
         </header>
       </div>

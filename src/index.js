@@ -3,16 +3,16 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-const firebase = require('firebase/app');
+// const firebase = require('firebase/app');
 
-var config = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-};
+// var config = {
+//   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+//   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+//   databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+//   storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+// };
 
-firebase.initializeApp(config);
+// firebase.initializeApp(config);
 
 ReactDOM.render(
   <React.StrictMode>

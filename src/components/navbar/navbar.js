@@ -3,7 +3,6 @@ import {
     Container,
     Dropdown,
     Menu,
-    Image,
     Button
 } from 'semantic-ui-react'
 
@@ -12,7 +11,7 @@ const navbar = () => (
         <Menu fixed='top' inverted>
         <Container>
             <Menu.Item as='a' header>
-                <Image size='mini' src="" style={{ marginRight: '1.5em' }} />
+                <span aria-label="bear" role="img" style={{ marginRight: '1.5em' }}>&#128059;</span>
                 BearBudget
             </Menu.Item>
             <Menu.Item as='a'>Home</Menu.Item>

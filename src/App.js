@@ -10,6 +10,7 @@ class App extends React.Component {
         <header className="App-header">
             <p>
               Welcome to BearBudget
+              <h4>Budget The <span aria-label="bear" role="img">&#128059;</span> Necessities</h4>
             </p>
           <Navbar/>
         </header>

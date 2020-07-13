@@ -1,4 +1,4 @@
 ## Welcome to BearBudget
 
-This project is current work in progress
+This project is currently work in progress
 Link: https://bearbudget.firebaseapp.com/

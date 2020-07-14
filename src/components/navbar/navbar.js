@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Container, Dropdown, Menu, Button } from "semantic-ui-react";
 
 const navbar = () => (
@@ -7,9 +6,10 @@ const navbar = () => (
         <Menu fixed="top" inverted>
         <Container>
             <Menu.Item as="a" header href="/">
-            <span aria-label="bear" role="img" style={{ marginRight: "1.5em" }}>
-                &#128059;
+            <span aria-label="bear" role="img" style={{ marginRight: "1em" }}>
+                &#x1f43c;
             </span>
+
             BearBudget
             </Menu.Item>
 

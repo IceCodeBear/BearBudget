@@ -11,7 +11,8 @@ import {
   IndexFunds,
   SavingsAccount,
   StockMarket,
-  RealEstate
+  RealEstate,
+  CreditScore
 } from "./components/articles";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 
@@ -33,6 +34,7 @@ class App extends React.Component {
               <Route path="/savingsaccount" component={SavingsAccount} />
               <Route path="/stockmarket" component={StockMarket} />
               <Route path="/realestate"component={RealEstate} />
+              <Route path="/creditscore"component={CreditScore} />
             </div>
           </Router>
         </header>

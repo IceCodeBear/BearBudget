@@ -7,3 +7,4 @@ export { default as IndexFunds } from "./indexfunds";
 export { default as SavingsAccount } from "./savingsaccount";
 export { default as StockMarket} from './stockmarket'
 export { default as RealEstate} from './realestate'
+export { default as CreditScore } from './creditscore'

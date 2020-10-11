@@ -50,8 +50,36 @@
 
 .ui.text.container {
   padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 h3.ui.header {
   text-align: left;
+}
+
+p {
+  text-align: left
+}
+
+div.ui.bulleted.list {
+  text-align: left;
+}
+
+div.ui.ordered.list {
+  text-align: left
+}
+
+div.ui.huge.image {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h6 {
+  margin: 0px
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }

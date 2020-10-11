@@ -39,7 +39,11 @@ const navbar = () => (
             </Dropdown>
 
             <Menu.Item as="a" href="/creditcards">
-            Credit Cards
+                Credit Cards
+            </Menu.Item>
+
+            <Menu.Item as="a" href="/creditscore">
+                Credit Score
             </Menu.Item>
 
             <Menu.Menu position="right">

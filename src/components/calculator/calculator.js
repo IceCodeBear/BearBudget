@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Header, Message } from "semantic-ui-react";
+import { Container, Header } from "semantic-ui-react";
 
-const calculator = () => (
+const Calculator = () => (
 
     <div className="App-header">
 
@@ -14,4 +14,4 @@ const calculator = () => (
     </div>
 );
 
-export default calculator;
+export default Calculator;

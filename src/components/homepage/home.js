@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Header, Message } from "semantic-ui-react";
+import { Container, Header, Message, Button } from "semantic-ui-react";
 
 const Home = () => (
 
@@ -18,8 +18,11 @@ const Home = () => (
                 </span>{" "}
                 Necessities
             </Header>
-
         </Container>
+
+
+        <Button className="calButton" href="/calculator">Go to Calculator</Button>
+
     </div>
 );
 

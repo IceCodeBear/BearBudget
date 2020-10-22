@@ -13,7 +13,7 @@ import {
   CreditScore
 } from "./components/articles";
 import { Route, BrowserRouter as Router } from "react-router-dom";
-import Calculator from "./components/calculator/calculator";
+import Calculatorcomp from "./components/calculator/calculatorcomp";
 
 class App extends React.Component {
   render() {
@@ -32,7 +32,7 @@ class App extends React.Component {
               <Route path="/indexfunds" component={IndexFunds} />
               <Route path="/savingsaccount" component={SavingsAccount} />
               <Route path="/creditscore"component={CreditScore} />
-              <Route path="/calculator" component={Calculator} />
+              <Route path="/calculator" component={Calculatorcomp} />
             </div>
           </Router>
         </header>

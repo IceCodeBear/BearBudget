@@ -6,8 +6,6 @@ const SavingsAccount = () => (
     <Header as="h1">What is a savings account?</Header>
 
     <Header as="h3">Why do you need a savings account?</Header>
-
-    <Header as="h3">Top 5 savings accounts</Header>
   </Container>
 );
 

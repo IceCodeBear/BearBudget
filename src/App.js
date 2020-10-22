@@ -8,9 +8,9 @@ import {
   Budget101,
   Roth401k,
   RA401k,
-  IndexFunds,
+  EmergencyFunds,
   SavingsAccount,
-  CreditScore
+  CreditScore,
 } from "./components/articles";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import Calculatorcomp from "./components/calculator/calculatorcomp";
@@ -29,9 +29,9 @@ class App extends React.Component {
               <Route path="/roth401k" component={Roth401k} />
               <Route path="/rothira" component={RothIRA} />
               <Route path="/401k" component={RA401k} />
-              <Route path="/indexfunds" component={IndexFunds} />
+              <Route path="/emergencyfunds" component={EmergencyFunds} />
               <Route path="/savingsaccount" component={SavingsAccount} />
-              <Route path="/creditscore"component={CreditScore} />
+              <Route path="/creditscore" component={CreditScore} />
               <Route path="/calculator" component={Calculatorcomp} />
             </div>
           </Router>

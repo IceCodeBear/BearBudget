@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color:#282c34;
+  background-color: #282c34;
   min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,7 +45,6 @@
 
 .ui.header {
   color: black;
-
 }
 
 .ui.text.container {
@@ -58,7 +57,7 @@ h3.ui.header {
 }
 
 p {
-  text-align: left
+  text-align: left;
 }
 
 div.ui.bulleted.list {
@@ -66,7 +65,7 @@ div.ui.bulleted.list {
 }
 
 div.ui.ordered.list {
-  text-align: left
+  text-align: left;
 }
 
 div.ui.huge.image {
@@ -75,7 +74,7 @@ div.ui.huge.image {
 }
 
 h6 {
-  margin: 0px
+  margin: 0px;
 }
 
 img {

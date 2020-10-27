@@ -5,7 +5,7 @@ const RA401k = () => (
   <Container text>
     <Header as="h1">What is 401k?</Header>
     <p>
-      A 401k is a compamy sponsored retirement plan that allows employees to
+      A 401k is a company sponsored retirement plan that allows employees to
       contribute a portion of their pre-tax paycheck to the retirement account.
     </p>
     <Header as="h3">Why do you need a 401k?</Header>

@@ -12,12 +12,15 @@ const HSA = () => (
 
     <Header as="h3">What is a high-deductiable health plan?</Header>
     <p>
-      A high=deductiable health plan is a low cost health plan with higher
+      A high-deductiable health plan is a low cost health plan with higher
       expenses.
     </p>
 
     <Header as="h3">What is the limit for HSA?</Header>
     <p>You can contribute up to $3,500 per year.</p>
+
+    <Header as="h3">How can I used the money in my HSA?</Header>
+    <p>The money in your HSA can be spend on a variety of items.</p>
   </Container>
 );
 

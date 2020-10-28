@@ -15,7 +15,7 @@ const Budget101 = () => (
       insurances, food, etc.
     </p>
 
-    <Header as="h3">Why do you need a budget?</Header>
+    <Header as="h3">Do you need a budget?</Header>
     <p>
       Yes, anyone can benefit from budgeting regardless of their income. A
       budget can help you monitor where your money is going and figure out if

@@ -15,9 +15,6 @@ const navbar = () => (
         <Dropdown item simple text="Getting Started">
           <Dropdown.Menu>
             <Dropdown.Item href="/budget101">Budget 101</Dropdown.Item>
-            <Dropdown.Item href="/savingsaccount">
-              Savings Account
-            </Dropdown.Item>
             <Dropdown.Item href="/emergencyfunds">Emergency Fund</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

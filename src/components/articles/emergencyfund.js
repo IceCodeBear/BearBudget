@@ -16,9 +16,18 @@ const EmergencyFunds = () => (
       <h6>Image by Your Money Line</h6>
     </div>
 
-    <p>Always prepare for the unexpected. </p>
+    <p>
+      Always prepare for the unexpected. Emergency funds is your safety net for
+      the worst case scenarios. An Emergency Fund includes multiple months of
+      basic expenses like rent, food, and utilities.
+    </p>
+
     <Header as="h3">How much should I contribute to my emergency fund?</Header>
-    <p>Well, it depends. Emergency funds can be between 3 to 6 months.</p>
+    <p>
+      Well, it depends. Emergency funds can be between 3 to 6 months. If you
+      currently work in a minimum wage job, then it would be best to have a 6
+      months worth of emergency fund in a high interests savings account.
+    </p>
   </Container>
 );
 

@@ -9,7 +9,6 @@ import {
   Roth401k,
   RA401k,
   EmergencyFunds,
-  SavingsAccount,
   CreditScore,
 } from "./components/articles";
 import { Route, BrowserRouter as Router } from "react-router-dom";
@@ -30,7 +29,6 @@ class App extends React.Component {
               <Route path="/rothira" component={RothIRA} />
               <Route path="/401k" component={RA401k} />
               <Route path="/emergencyfunds" component={EmergencyFunds} />
-              <Route path="/savingsaccount" component={SavingsAccount} />
               <Route path="/creditscore" component={CreditScore} />
               <Route path="/calculator" component={Calculatorcomp} />
             </div>

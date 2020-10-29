@@ -5,8 +5,8 @@ class UserInput extends Component {
     const { name, value, saveToState } = this.props;
 
     return (
-      <div className="form-group">
-        <label for={name}>{name.titleCase()}</label>
+      <div className="form-group" style={{paddingTop: '10px'}}>
+        <label for={name}>{name.titleCase() + ' '}</label>
         <input
           type="number"
           name={name}

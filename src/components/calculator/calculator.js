@@ -135,7 +135,7 @@ class RetireCalculator extends React.Component {
 
   futureValue() {
     let { annual_deposit, interest_rate, current_savings } = this.state;
-    console.log(annual_deposit);
+
     let int = interest_rate / 100;
     let years_data = [];
     let years_until_retirement = this.getYearsUntilRetirement();
@@ -154,6 +154,7 @@ class RetireCalculator extends React.Component {
         future_value = new_sum;
       }
     }
+    future_value = Number(future_value)
     years_data = years_data.map(Number);
 
     return { future_value, years_data };

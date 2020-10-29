@@ -2,6 +2,7 @@ import React from "react";
 import Result from "./result";
 import UserInput from "./userInput";
 import zingchart from "zingchart";
+import { Container, Header } from "semantic-ui-react";
 
 Array.eq = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 
@@ -15,8 +16,9 @@ String.prototype.titleCase = function () {
     .join(" ");
 };
 
-class Calculator1 extends React.Component {
+class RetireCalculator extends React.Component {
   constructor(props) {
+    super(props);
     const defaultState = {
       future_value: 0,
       annual_retirement_income: 0,
@@ -60,7 +62,7 @@ class Calculator1 extends React.Component {
   }
 
   render() {
-    const { future_value, annual_retirement_income } = this.state;
+    const { future_value } = this.state;
 
     return (
       <div className="row">
@@ -81,12 +83,6 @@ class Calculator1 extends React.Component {
           <Result
             msg={`Total Retirement Savings: ${this.toUsd(future_value)}`}
             type="info"
-          />
-          <Result
-            msg={`Annual Retirement Income: ${this.toUsd(
-              annual_retirement_income
-            )}`}
-            type={this.state.on_track ? "success" : "danger"}
           />
         </div>
       </div>
@@ -113,7 +109,7 @@ class Calculator1 extends React.Component {
   }
 
   getYearsUntilRetirement() {
-    const { current_age, retirement_age } = this.state;
+    let { current_age, retirement_age } = this.state;
     return retirement_age - current_age;
   }
 
@@ -138,29 +134,27 @@ class Calculator1 extends React.Component {
   }
 
   futureValue() {
-    const {
-      current_age,
-      retirement_age,
-      annual_deposit,
-      interest_rate,
-      current_savings,
-    } = this.state;
+    let { annual_deposit, interest_rate, current_savings } = this.state;
+    console.log(annual_deposit);
+    let int = interest_rate / 100;
+    let years_data = [];
+    let years_until_retirement = this.getYearsUntilRetirement();
 
-    const int = interest_rate / 100;
-    const years_data = [];
-    const years_until_retirement = Array.from(
-      new Array(this.getYearsUntilRetirement())
-    );
-    const future_value = years_until_retirement.reduce((sum) => {
-      const last_year_plus_annual_deposit = sum + annual_deposit;
-      const interest_earned = last_year_plus_annual_deposit * int;
-      const new_sum = parseFloat(
-        (last_year_plus_annual_deposit + interest_earned).toFixed(2)
-      );
+    console.log("years_until_retirement", years_until_retirement);
+    var i;
+    let future_value;
+    for (i = 1; i < years_until_retirement + 1; i++) {
+      let last_year_plus_annual_deposit = annual_deposit * i;
+      let interest_earned = last_year_plus_annual_deposit * int;
+      let get_sum = last_year_plus_annual_deposit + interest_earned;
+      let new_sum = parseFloat(get_sum).toFixed(0);
 
       years_data.push(new_sum);
-      return new_sum;
-    }, current_savings);
+      if (i === years_until_retirement) {
+        future_value = new_sum;
+      }
+    }
+    years_data = years_data.map(Number);
 
     return { future_value, years_data };
   }
@@ -173,4 +167,22 @@ class Calculator1 extends React.Component {
   }
 }
 
-export default Calculator1;
+const initial_data = {
+  current_age: 25,
+  retirement_age: 68,
+  current_savings: 1000,
+  annual_deposit: 7000,
+  interest_rate: 8,
+};
+
+const Calculator = () => (
+  <div>
+    <Container text>
+      <Header as="h1">Retirement Calculator</Header>
+      <Header as="h2"></Header>
+      <RetireCalculator {...initial_data} />
+    </Container>
+  </div>
+);
+
+export default Calculator;

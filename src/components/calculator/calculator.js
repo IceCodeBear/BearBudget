@@ -2,7 +2,7 @@ import React from "react";
 import Result from "./result";
 import UserInput from "./userInput";
 import zingchart from "zingchart";
-import { Container, Header } from "semantic-ui-react";
+import { Container, Header, Message } from "semantic-ui-react";
 
 Array.eq = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 
@@ -140,14 +140,12 @@ class RetireCalculator extends React.Component {
     let years_data = [];
     let years_until_retirement = this.getYearsUntilRetirement();
 
-    console.log("years_until_retirement", years_until_retirement);
     var i;
     let future_value;
     for (i = 1; i < years_until_retirement + 1; i++) {
-      let last_year_plus_annual_deposit = annual_deposit * i;
-      let interest_earned = last_year_plus_annual_deposit * int;
-      let get_sum = last_year_plus_annual_deposit + interest_earned;
-      let new_sum = parseFloat(get_sum).toFixed(0);
+      let new_sum = (current_savings + annual_deposit) * i * (int + 1)
+      
+      new_sum = parseFloat(new_sum).toFixed(0)
 
       years_data.push(new_sum);
       if (i === years_until_retirement) {
@@ -156,7 +154,6 @@ class RetireCalculator extends React.Component {
     }
     future_value = Number(future_value)
     years_data = years_data.map(Number);
-
     return { future_value, years_data };
   }
 
@@ -177,8 +174,14 @@ const initial_data = {
 };
 
 const Calculator = () => (
+
   <div>
     <Container text>
+      <Message
+        size="mini"
+        header="Work in Progress"
+        content="TODO: FIX THE MATH"
+      />
       <Header as="h1">Retirement Calculator</Header>
       <Header as="h2"></Header>
       <RetireCalculator {...initial_data} />

@@ -166,9 +166,9 @@ class RetireCalculator extends React.Component {
 }
 
 const initial_data = {
-  current_age: 25,
+  current_age: 23,
   retirement_age: 68,
-  current_savings: 1000,
+  current_savings: 500,
   annual_deposit: 7000,
   interest_rate: 8,
 };

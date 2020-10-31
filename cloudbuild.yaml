@@ -1,5 +1,4 @@
 steps:
-
       # Install
       - name: 'gcr.io/cloud-builders/npm'
         args: ['install']

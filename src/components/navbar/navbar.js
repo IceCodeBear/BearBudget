@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Dropdown, Menu, Button } from "semantic-ui-react";
+import { Container, Dropdown, Menu } from "semantic-ui-react";
 
 const navbar = () => (
   <div>
@@ -39,15 +39,6 @@ const navbar = () => (
           Calculator
         </Menu.Item>
 
-        <Menu.Menu position="right">
-          <Menu.Item>
-            <Button primary>Sign up</Button>
-          </Menu.Item>
-
-          <Menu.Item>
-            <Button>Log-in</Button>
-          </Menu.Item>
-        </Menu.Menu>
       </Container>
     </Menu>
   </div>
